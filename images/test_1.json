@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Filete de Pescado Grillé",
+        "price": "1980"
+    },
+    {
+        "name": "Filete de Pescado Empanado",
+        "price": "2380"
+    },
+    {
+        "name": "Filete de Pescado a la Muselina",
+        "price": "2430"
+    },
+    {
+        "name": "Filete de Pescado Grillé Gratinado",
+        "price": "2230"
+    },
+    {
+        "name": "Filete Don Pedro",
+        "price": "2930"
+    },
+    {
+        "name": "Filete Canciller",
+        "price": "2780"
+    },
+    {
+        "name": "Filete de Pescado JOINVILLE",
+        "price": "3030"
+    },
+    {
+        "name": "Filete de Pescado Relleno",
+        "price": "2780"
+    },
+    {
+        "name": "Camarones Grillé",
+        "price": "2030"
+    },
+    {
+        "name": "Camarones al Ajillo",
+        "price": "2030"
+    },
+    {
+        "name": "Enchilado de Camarones",
+        "price": "2030"
+    },
+    {
+        "name": "Camarones Orly",
+        "price": "2330"
+    },
+    {
+        "name": "Camarones Empanados",
+        "price": "2330"
+    },
+    {
+        "name": "Camarón Marnay",
+        "price": "2330"
+    },
+    {
+        "name": "Langosta Grillé",
+        "price": "2030"
+    },
+    {
+        "name": "Langosta Enchilada",
+        "price": "2030"
+    },
+    {
+        "name": "Langosta Termidor",
+        "price": "2030"
+    },
+    {
+        "name": "Langosta Varadero",
+        "price": "2030"
+    },
+    {
+        "name": "Langosta Marnay",
+        "price": "2030"
+    }
+]
