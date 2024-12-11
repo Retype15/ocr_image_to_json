@@ -1,3 +1,4 @@
+print("Inicializando el modelo OCR...")
 import os
 import json
 from tqdm import tqdm
@@ -22,14 +23,13 @@ def save_results_as_json(image_path, results):
 def process_all_images_in_folder(ocr_processor, folder_path):
     image_files = [f for f in os.listdir(folder_path) if f.endswith(('.jpg', '.jpeg', '.png'))]
 
-    with tqdm(total=len(image_files), desc="Procesando imágenes", unit="imagen") as pbar:
+    with tqdm(total=len(image_files), desc="Procesando imágenes", unit="imagen", leave=True) as pbar:
         for image_file in image_files:
             image_path = os.path.join(folder_path, image_file)
             extracted_data = ocr_processor.process_image(image_path)
             save_results_as_json(image_path, extracted_data)
             print_data(extracted_data)
             pbar.update(1)
-
 
 # Ejemplo de uso
 if __name__ == "__main__":
