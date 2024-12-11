@@ -4,7 +4,7 @@
 Este proyecto utiliza EasyOCR para procesar imágenes y extraer texto, en este momento nombres de platos y sus precios de imagenes de menus, pero se puede modificar y adaptar a sus necesidades. Los resultados se guardan en archivos JSON correspondientes a cada imagen procesada. El procesamiento se realiza de manera eficiente utilizando operaciones de preprocesamiento de imágenes con OpenCV.
 
 ## Requisitos
-- Python 3.6+
+- Python 3.12.3+
 - easyocr
 - opencv-python
 - numpy
