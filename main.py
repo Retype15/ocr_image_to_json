@@ -26,7 +26,7 @@ def process_all_images_in_folder(ocr_processor, folder_path):
     with tqdm(total=len(image_files), desc="Procesando imágenes", unit="imagen", leave=True) as pbar:
         for image_file in image_files:
             image_path = os.path.join(folder_path, image_file)
-            extracted_data = ocr_processor.process_image(image_path)
+            extracted_data = ocr_processor.process_image(image_path, show_img=True)
             save_results_as_json(image_path, extracted_data)
             print_data(extracted_data)
             pbar.update(1)
@@ -37,18 +37,5 @@ if __name__ == "__main__":
     print("Inicializando modelo AI...")
     ocr_processor = OCRProcessor(language='es', use_gpu=False)
     process_all_images_in_folder(ocr_processor, folder_path)
-    
-    # Crear una instancia de OCRProcessor
-    # ocr_processor = OCRProcessor(language='es', use_gpu=False)
-    
-    #Procesar una imagen
-    # image_path = 'bbbb.jpg'
-    # extracted_data = ocr_processor.process_image(image_path)
-    
-    # print(ocr_processor.transcurred_time)
-    # print_data(extracted_data)
-    # save_results_as_json(image_path, extracted_data)
-    
-    # print_data(ocr_processor.process_image('aaaa.jpg', True))
-    # print(ocr_processor.transcurred_time)
-    # save_results_as_json('aaaa.jpg', extracted_data)
+    print("Proceso terminado!")
+
